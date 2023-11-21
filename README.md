@@ -14,5 +14,6 @@
     See doc/README.md for further details
     Also, the same info is in doc/41-mqtt_00.pdf
 
-    
+NOTAS FER:
+La dirección del server va en mqtt_def.h    
 

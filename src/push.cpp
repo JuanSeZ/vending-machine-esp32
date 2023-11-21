@@ -6,7 +6,8 @@
 
 #include "button.h"
 
-static const unsigned pin[NUM_PUSH] = { PENICILIN_BUTTON, TAFIROL_BUTTON };
+static const unsigned pin[NUM_PUSH] = { IBUPROFEN_BUTTON, DIPHEMHYDRAMINE_BUTTON, PARACETAMOL_BUTTON, ASPIRIN_BUTTON,
+    RESTOCK_BUTTON, CREDIT_BUTTON};
 
 Button btns[NUM_PUSH];
 

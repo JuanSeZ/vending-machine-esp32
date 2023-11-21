@@ -25,17 +25,17 @@ typedef struct
 
 static const topic_t topics[] =
 {
-    {   "clear", clear_leds },
-    {   "tr", toggle_red    },
-    {   "ty", toggle_yel    },
-    {   "tg", toggle_grn    },
-    {   "ti", toggle_int    },
-    {   "sr", set_red       },
-    {   "sy", set_yel       },
-    {   "sg", set_grn       },
-    {   "si", set_int       },
-    {   "button", rx_button },
-    {   NULL }
+    // {   "clear", clear_leds },
+    // {   "tr", toggle_red    },
+    // {   "ty", toggle_yel    },
+    // {   "tg", toggle_grn    },
+    // {   "ti", toggle_int    },
+    // {   "sr", set_red       },
+    // {   "sy", set_yel       },
+    // {   "sg", set_grn       },
+    // {   "si", set_int       },
+    // {   "button", rx_button },
+    // {   NULL }
 };
 
 /*
@@ -62,10 +62,10 @@ static const char *subs[] =
     "50/#",
     "+/button",
 #elif (SUB_LIST==2)
-    "+/sr",
-    "00/sy",
-    "+/cy",
-    "+/clear",
+    // "+/sr",
+    // "00/sy",
+    // "+/cy",
+    // "+/clear",
 #else
     #error "Bad SUB_LIST symbol, out of range"
 #endif
@@ -100,7 +100,8 @@ static const char *subs[] =
     #define BROKER_USER ""
     #define BROKER_PASS ""
 #elif (MQTT==2)
-    #define BROKER_NAME "broker.mqtt-dashboard.com"    //  Remote broker by name
+    //
+    #define BROKER_NAME "35.174.87.19"    //  Remote broker by name, broker.mqtt-dashboard.com
     #define BROKER_PORT 1883
     #define BROKER_USER ""
     #define BROKER_PASS ""

@@ -167,16 +167,7 @@ init_subscriptions(void)
 void
 init_mqtt(int num)
 {
-    subs_string(sub_header);
-
-    id_string(client_id,num);
-    Serial.printf("client_id: %s\n", client_id );
-
-    topic_string(tp_string,num);
-    Serial.printf("tp_string: %s\n", tp_string );
-
     client_connect();
-    init_subscriptions();
 }
 
 /*
